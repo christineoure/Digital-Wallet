@@ -1,5 +1,5 @@
 from datetime import date, datetime
-from email.policy import default
+# from email.policy import default
 # from email import message
 # from email.policy import default
 from django.db import models
