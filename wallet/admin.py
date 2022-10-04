@@ -7,7 +7,7 @@ from.models import Account, Card, Currency, Customer, Loan, Notification, Receip
 
 
 class CustomerAdmin(admin.ModelAdmin):
-    list_display =("first_name", "last_name", "email",)
+    list_display =("first_name", "last_name", "email", "age",)
     search_fields =("first_name", "last_name",)
 
 
@@ -83,3 +83,4 @@ class CurrencyAdmin(admin.ModelAdmin):
     list_display = ("country", "name", "symbol")
     search_fields = ("country", "name",)
 admin.site.register(Currency, CurrencyAdmin)
+
