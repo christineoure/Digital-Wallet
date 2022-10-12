@@ -91,8 +91,8 @@ class Loan(models.Model):
    wallet = models.ForeignKey("Wallet", on_delete=models.CASCADE) 
 
 class Reward(models.Model):
-    date_field = models.DateTimeField()
     wallet = models.ForeignKey("Wallet", on_delete=models.CASCADE)
+    date_field = models.DateTimeField()
     points = models.PositiveIntegerField()
     transaction = models.ForeignKey("Transaction", on_delete=models.CASCADE)
 

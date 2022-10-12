@@ -4,7 +4,7 @@ from .views import customer_profile, edit_loan, edit_wallet, list_customers, lis
 
 urlpatterns = [
     path("register/", register_customer, name ="registration"),  
-     path("list/", list_customers, name ="list_customers"),
+    path("list/", list_customers, name ="list_customers"),
     path("customers/<int:id>", customer_profile, name ="customer_profile"),
     path("customers/edit/<int:id>", edit_customer, name ="edit_customer"),
 
